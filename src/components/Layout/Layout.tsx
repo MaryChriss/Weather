@@ -1,4 +1,5 @@
 import { Menu } from "../Menu/Menu";
+import { StyledLayout } from "./Layout.style";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -6,9 +7,9 @@ interface LayoutProps {
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
-    <div>
+    <StyledLayout>
       <main>{children}</main>
       <Menu />
-    </div>
+    </StyledLayout>
   );
 }
