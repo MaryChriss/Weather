@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Suspense fallback={<>Carregando...</>}>
         <Routes>
-        <Route path="/" element={<LazyHome />} />
+          <Route path="/" element={<LazyHome />} />
           <Route path="/busca" element={<LazySearch />} />
           <Route path="/perfil" element={<LazyProfile />} />
         </Routes>
